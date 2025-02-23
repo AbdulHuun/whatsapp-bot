@@ -7,6 +7,7 @@ if (existsSync(configPath)) require('dotenv').config({ path: configPath })
 const toBool = (x) => x == 'true'
 const DATABASE_URL =
   process.env.DATABASE_URL === undefined ? databasePath : process.env.DATABASE_URL
+SESSION_ID=levanter_23a0cbd32c8a5141d78b9229382e205cab
 module.exports = {
   VERSION: require('./package.json').version,
   SESSION_ID: (process.env.SESSION_ID || '').trim(),
